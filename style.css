@@ -1,0 +1,33 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #11c300 !important;
+
+  border-bottom: 2px solid #b5fd3a !important;
+}
+
+.navbar-brand {
+  color: #b5fd3a !important;
+  margin-right: 50px !important;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: honeydew !important;
+}
+
+.form-control {
+  background-color: honeydew !important;
+}
+
+.btn {
+  background-color: #25a519;
+  color: honeydew;
+}
+
+.btn:hover {
+  background-color: #b5fd3a;
+}
+
