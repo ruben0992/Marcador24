@@ -31,3 +31,75 @@ body {
   background-color: #b5fd3a;
 }
 
+.leagues-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.league-card {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.league-card:hover {
+  transform: scale(1.05);
+}
+
+.premier-league-logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.laLiga-league-logo {
+  width: 37px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.serieA-league-logo {
+  width: 22px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.bundesliga-league-logo {
+  width: 38px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ligue1-league-logo {
+  width: 28px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.primeira-league-logo {
+  width: 31px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.champions-league-logo {
+  width: 43px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.europa-league-logo {
+  width: 43px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.league-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
