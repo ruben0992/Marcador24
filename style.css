@@ -1,38 +1,40 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "raleway", sans-serif;
+  background-color: #121212;
 }
 
 .navbar {
-  background-color: #11c300 !important;
+  background-color: #1f1f1f !important;
 
-  border-bottom: 2px solid #b5fd3a !important;
+  border-bottom: 2px solid #8b0b0b !important;
 }
 
 .navbar-brand {
-  color: #b5fd3a !important;
+  color: #01d099 !important;
   margin-right: 50px !important;
   font-weight: 500;
 }
 
 .nav-link {
-  color: honeydew !important;
+  color: #f6f3f3 !important;
 }
 
 .form-control {
-  background-color: honeydew !important;
+  background-color: #f6f3f3 !important;
 }
 
 .btn {
-  background-color: #25a519;
+  background-color: #01d099;
   color: honeydew;
 }
 
 .btn:hover {
-  background-color: #b5fd3a;
+  background-color: #8b0b0b;
+  color: #f6f3f3;
 }
 
 .leagues-section {
-  background-color: #f8f9fa;
+  background-color: #121212;
   padding: 40px 0;
 }
 
@@ -41,7 +43,7 @@ body {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: white;
+  background-color: #f6f3f3;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
