@@ -50,24 +50,20 @@
             </div>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn " type="submit">Search</button>
+                <button class="btn" type="submit">Search</button>
               </form>
         </nav>
       </section>
     </header>
     <main>
       <section class="container mt-5">
-        <div id="wg-api-football-fixtures"
-            data-host="v3.football.api-sports.io"
-            data-refresh="60"
-            data-date=""
-            data-league=""
-            data-key="cb3407371ea266d841616b1400dbdc81"
-            data-theme="false"
-            data-show-errors="true"
-            class="api_football_loader">
-        </div>
-</section>
+        <iframe width="100%" src="partidos.html?league=39&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
+        <iframe width="100%" src="partidos.html?league=78&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
+        <iframe width="100%" src="partidos.html?league=140&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
+        <iframe width="100%" src="partidos.html?league=135&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
+        <iframe width="100%" src="partidos.html?league=61&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
+        <iframe width="100%" src="partidos.html?league=94&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
+      </section>
     </main>
     <footer></footer>
     <script src="script.js"></script>
@@ -80,3 +76,4 @@
     </script>
   </body>
 </html>
+
