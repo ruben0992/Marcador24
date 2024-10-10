@@ -54,6 +54,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 3000); // Ajusta el tiempo según la carga del widget
 });
 
+document.addEventListener('click', function (event) {
+  
+  let leagueCard = event.target.closest('.league-card');
+  if (!leagueCard) return;
+  event.preventDefault();
+
+  let id = leagueCard.getAttribute('data-league');
+  let standings = document.getElementById('wg-api-football-standings');
+  standings.innerHTML = ''; 
+  standings.setAttribute('data-league', id);
+
+  window.document.dispatchEvent(new Event("DOMContentLoaded", {
+      bubbles: true,
+      cancelable: true
+  }));
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const widget = document.getElementById("wg-api-football-fixtures");
   const dateInput = document.getElementById("match-date");
@@ -72,7 +89,7 @@ function resizeIframe(obj) {
 
   setTimeout(() => {
 
-      obj.style.height=(obj.contentWindow.document.body.scrollHeight+20)+'px';
+      obj.style.height=(obj.contentWindow.document.body.scrollHeight+30)+'px';
 
   }, 500)
 }
@@ -96,19 +113,4 @@ function get_parameter(param) {
 }
 
 
-document.addEventListener('click', function (event) {
 
-    if (!event.target.matches('._link')) return
-    event.preventDefault()
-
-    let id = event.target.getAttribute('data-league')
-
-    let standings = document.getElementById('wg-api-football-standings')
-        standings.innerHTML = ''
-        standings.setAttribute('data-league', id);
-
-    window.document.dispatchEvent(new Event("DOMContentLoaded", {
-      bubbles: true,
-      cancelable: true
-    }));
-})

@@ -46,6 +46,7 @@ body {
   background-color: #f6f3f3;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .league-card:hover {
@@ -82,6 +83,12 @@ body {
   margin-bottom: 10px;
 }
 
+.eredivisie-league-logo {
+  width: 68px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 .primeira-league-logo {
   width: 31px;
   height: auto;
@@ -96,6 +103,18 @@ body {
 
 .europa-league-logo {
   width: 43px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.conference-league-logo {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.uefa-nations-league-logo {
+  width: 28px;
   height: auto;
   margin-bottom: 10px;
 }
