@@ -41,6 +41,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
+                <a class="nav-link" href="competiciones.html">Competiciones</a>
                 <a class="nav-link " aria-current="page" href="clasificación.html">Clasificación</a>
                 <a class="nav-link" href="#">Novedades</a>
                 <a class="nav-link" href="#">Equipos</a>
@@ -56,22 +57,26 @@
       </section>
     </header>
     <main>
-      <section class="container mt-5">
-        <iframe width="100%" src="partidos.html?league=39&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=78&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=140&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=135&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=61&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=88&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=94&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=848&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-        <iframe width="100%" src="partidos.html?league=5&season=2024" frameborder="0" onload="resizeIframe(this)"></iframe>
-      </section>
+      <div id="wg-api-football-games"
+            data-host="v3.football.api-sports.io"
+            data-key="cb3407371ea266d841616b1400dbdc81"
+            data-date=""
+            data-league=""
+            data-season=""
+            data-theme=""
+            data-refresh="15"
+            data-show-toolbar="true"
+            data-show-errors="false"
+            data-show-logos="true"
+            data-modal-game="true"
+            data-modal-standings="true"
+            data-modal-show-logos="true">
+      </div>
     </main>
     <footer></footer>
     <script src="script.js"></script>
     <script type="module"
-            src="https://widgets.api-sports.io/football/1.1.8/widget.js">
+            src="https://widgets.api-sports.io/2.0.3/widgets.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

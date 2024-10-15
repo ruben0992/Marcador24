@@ -71,46 +71,24 @@ document.addEventListener('click', function (event) {
   }));
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const widget = document.getElementById("wg-api-football-fixtures");
-  const dateInput = document.getElementById("match-date");
-  const today = new Date().toISOString().split("T")[0];
-  widget.setAttribute("data-date", today);
+document.addEventListener('click', function (event) {
+  
+  let leagueCard = event.target.closest('.competition-card');
+  if (!leagueCard) return;
+  event.preventDefault();
+
+  let id = leagueCard.getAttribute('data-league');
+  let standings = document.getElementById('wg-api-football-fixtures');
+  standings.innerHTML = ''; 
+  standings.setAttribute('data-league', id);
+
+  window.document.dispatchEvent(new Event("DOMContentLoaded", {
+      bubbles: true,
+      cancelable: true
+  }));
 });
 
-let fixtures = document.getElementById('wg-api-football-fixtures')
-    let league = get_parameter('league')
-    let season = get_parameter('season')
-    fixtures.setAttribute('data-league', league)
-    fixtures.setAttribute('data-season', season)
 
-    
-function resizeIframe(obj) {
-
-  setTimeout(() => {
-
-      obj.style.height=(obj.contentWindow.document.body.scrollHeight+30)+'px';
-
-  }, 500)
-}
-
-function get_parameter(param) {
-
-  var vars = {};
-
-  window.location.href.replace( location.hash, '' ).replace(/[?&]+([^=&]+)=?([^&]*)?/gi,
-      function( m, key, value ) {
-
-          vars[key] = value !==  undefined  ? value :  '';
-      }
-  );
-
-  if ( param ) {
-
-      return vars[param] ? vars[param] :  null;
-  }
-  return vars;
-}
 
 
 
