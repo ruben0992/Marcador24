@@ -49,21 +49,22 @@
                 <a class="nav-link"></a>
               </div>
             </div>
-            <form class="d-flex" role="search">
+            <form class="search d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit">Search</button>
+                <button class="btn d-flex align-items-center" type="submit">Search</button>
               </form>
         </nav>
       </section>
     </header>
     <main>
+      <section class="container">
       <div id="wg-api-football-games"
             data-host="v3.football.api-sports.io"
             data-key="cb3407371ea266d841616b1400dbdc81"
             data-date=""
             data-league=""
             data-season=""
-            data-theme=""
+            data-theme="dark"
             data-refresh="15"
             data-show-toolbar="true"
             data-show-errors="false"
@@ -72,6 +73,7 @@
             data-modal-standings="true"
             data-modal-show-logos="true">
       </div>
+    </section>
     </main>
     <footer></footer>
     <script src="script.js"></script>

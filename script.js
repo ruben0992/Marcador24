@@ -25,18 +25,38 @@ fetchData("some-endpoint").then((data) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const widget = document.getElementById("wg-api-football-fixtures");
+  const widget = document.getElementById("wg-api-football-games");
 
   setTimeout(() => {
     const translations = {
+      Standings: "Clasificación",
       HalfTime: "Descanso",
       League: "Liga",
       Score: "Puntuación",
+      EVENTS: "RESUMEN",
       ALL: "TODOS",
       LIVE: "EN DIRECTO",
       FINISHED: "TERMINADOS",
       SCHEDULED: "PROGRAMADOS",
       TODAY: "HOY",
+      Two: "Dos",
+      "First Half": "Primera Parte",
+      "Second Half": "Secunda Parte",
+      "Non Liga Div One": "Primera división fuera de la liga",
+      "Frauen Bundesliga": "Bundesliga femenina",
+      "1. Division": "Primera división",
+      "Second Liga": "Segunda liga",
+      "First Liga": "Primera Liga",
+      "Premijer Liga": "Primera Liga",
+      "Prva Liga": "Primera Liga",
+      "Esiliiga A": "Liga Premier A",
+      "Druha Liga": "Segunda Liga",
+      "Division di Honor": "División de Honor",
+      "Girone H": "Grupo H",
+      "Reserve Pro Liga": "Reserva Pro Liga",
+      "Ýokary Liga": "Primera Liga",
+      "Liga MX Femenil": "Liga MX Femenina",
+      "Premier Liga 2 Division One": "Primera División 2 de la Premier Liga",
       // Añade más traducciones según sea necesario
     };
 
@@ -51,41 +71,43 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
-  }, 3000); // Ajusta el tiempo según la carga del widget
+  }, 2000); // Ajusta el tiempo según la carga del widget
 });
 
-document.addEventListener('click', function (event) {
-  
-  let leagueCard = event.target.closest('.league-card');
+document.addEventListener("click", function (event) {
+  let leagueCard = event.target.closest(".league-card");
   if (!leagueCard) return;
   event.preventDefault();
 
-  let id = leagueCard.getAttribute('data-league');
-  let standings = document.getElementById('wg-api-football-standings');
-  standings.innerHTML = ''; 
-  standings.setAttribute('data-league', id);
+  let id = leagueCard.getAttribute("data-league");
+  let standings = document.getElementById("wg-api-football-standings");
+  standings.innerHTML = "";
+  standings.setAttribute("data-league", id);
 
-  window.document.dispatchEvent(new Event("DOMContentLoaded", {
+  window.document.dispatchEvent(
+    new Event("DOMContentLoaded", {
       bubbles: true,
-      cancelable: true
-  }));
+      cancelable: true,
+    })
+  );
 });
 
-document.addEventListener('click', function (event) {
-  
-  let leagueCard = event.target.closest('.competition-card');
+document.addEventListener("click", function (event) {
+  let leagueCard = event.target.closest(".competition-card");
   if (!leagueCard) return;
   event.preventDefault();
 
-  let id = leagueCard.getAttribute('data-league');
-  let standings = document.getElementById('wg-api-football-fixtures');
-  standings.innerHTML = ''; 
-  standings.setAttribute('data-league', id);
+  let id = leagueCard.getAttribute("data-league");
+  let fixtures = document.getElementById("wg-api-football-fixtures");
+  fixtures.innerHTML = "";
+  fixtures.setAttribute("data-league", id);
 
-  window.document.dispatchEvent(new Event("DOMContentLoaded", {
+  window.document.dispatchEvent(
+    new Event("DOMContentLoaded", {
       bubbles: true,
-      cancelable: true
-  }));
+      cancelable: true,
+    })
+  );
 });
 
 

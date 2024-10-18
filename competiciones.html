@@ -49,48 +49,92 @@
                 <a class="nav-link"></a>
               </div>
             </div>
-            <form class="d-flex" role="search">
+            <form class="search d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit">Search</button>
+                <button class="btn d-flex align-items-center" type="submit">Search</button>
               </form>
         </nav>
       </section>
     </header>
     <main>
-        <h1>TOP COMPETICIONES</h1>
-        <div class="competitions-container">
+        <section class="container">
+
+            <h1>TOP COMPETICIONES</h1>
+            <div class="competitions-container">
             <div class="competition-card" data-league="39">
-                <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" alt="Premier League">
-                <div class="competition-details">
-                    <span>Premier League</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" alt="Premier League">
+                    <div class="competition-details">
+                        <span>Premier League</span>
                 </div>
             </div>
 
-            <div class="competition-card" data-league="78">
+            <div class="competition-card" data-league="45">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/55/FA_Cup_2020.png" alt="FA Cup">
+                <div class="competition-details">
+                    <span>FA Cup</span>
+            </div>
+        </div>
+
+            <div class="competition-card" data-league="48">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/EFL_%28Carabao%29_Cup_Logo.svg" alt="Carabao Cup">
+                <div class="competition-details">
+                    <span>Carabao Cup</span>
+            </div>
+        </div>
+            
+            <div class="competition-card" data-league="140">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg" alt="La Liga">
                 <div class="competition-details">
                     <span>La Liga</span>
                 </div>
             </div>
 
-            <div class="competition-card" data-league="140">
+            <div class="competition-card" data-league="143">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Logo_Copa_del_Rey_2021_%28red_badge%29.svg" alt=" Copa del Rey">
+                <div class="competition-details">
+                    <span> Copa del Rey</span>
+                </div>
+            </div>
+            
+            <div class="competition-card" data-league="135">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Serie_A_logo_2022.svg" alt="Serie A">
                 <div class="competition-details">
                     <span>Serie A</span>
                 </div>
             </div>
 
-            <div class="competition-card" data-league="135">
+            <div class="competition-card" data-league="137">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Coppa_Italia_-_Logo_2019.svg" alt="Coppa Italia">
+                <div class="competition-details">
+                    <span>Coppa Italia</span>
+                </div>
+            </div>
+            
+            <div class="competition-card" data-league="78">
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/800px-Bundesliga_logo_%282017%29.svg.png" alt="Bundesliga">
                 <div class="competition-details">
                     <span>Bundesliga</span>
                 </div>
             </div>
 
+            <div class="competition-card" data-league="81">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/DFB-Pokal_logo_2016.svg" alt="DFB Pokal">
+                <div class="competition-details">
+                    <span>DFB Pokal</span>
+                </div>
+            </div>
+            
             <div class="competition-card" data-league="61">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Ligue1_Uber_Eats_logo.png" alt="Ligue 1">
                 <div class="competition-details">
                     <span>Ligue 1</span>
+                </div>
+            </div>
+
+            <div class="competition-card" data-league="66">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Coupe_de_France_logo.png" alt="Coupe de France">
+                <div class="competition-details">
+                    <span>Coupe de France</span>
                 </div>
             </div>
 
@@ -100,28 +144,28 @@
                     <span>Eredivisie</span>
                 </div>
             </div>
-
+            
             <div class="competition-card" data-league="94">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Liga_Portugal_Betclic_2023.png" alt="Primeira Liga">
                 <div class="competition-details">
                     <span>Primeira Liga</span>
                 </div>
             </div>
-
+            
             <div class="competition-card" data-league="2">
                 <img src="https://upload.wikimedia.org/wikipedia/en/f/f5/UEFA_Champions_League.svg" alt="Champions League">
                 <div class="competition-details">
                     <span>Champions League</span>
                 </div>
             </div>
-    
+            
             <div class="competition-card" data-league="3">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Europa_League_2021.svg" alt="Europa League">
                 <div class="competition-details">
                     <span>Europa League</span>
                 </div>
             </div>
-
+            
             <div class="competition-card" data-league="848">
                 <img src="https://upload.wikimedia.org/wikipedia/en/5/54/UEFA_Conference_League_2024.png" alt="Conference League">
                 <div class="competition-details">
@@ -137,25 +181,26 @@
             </div>
         </div>
         <div id="wg-api-football-fixtures"
-            data-host="v3.football.api-sports.io"
-            data-refresh="60"
-            data-date=""
-            data-league="5"
-            data-season="2024"
-            data-key="cb3407371ea266d841616b1400dbdc81"
-            data-theme="false"
-            data-show-errors="true"
-            class="api_football_loader">
-        </div>
-    </main>
-    <footer></footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous">
+        data-host="v3.football.api-sports.io"
+        data-refresh="60"
+        data-date=""
+        data-league="5"
+        data-season="2024"
+        data-key="cb3407371ea266d841616b1400dbdc81"
+        data-theme="dark"
+        data-show-errors="true"
+        class="api_football_loader">
+    </div>
+</section>
+</main>
+<footer></footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous">
     </script>
     <script type="module"
-            src="https://widgets.api-sports.io/football/1.1.8/widget.js">
+    src="https://widgets.api-sports.io/football/1.1.8/widget.js">
     </script>
   </body>
 </html>

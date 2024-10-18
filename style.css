@@ -1,10 +1,10 @@
 body {
   font-family: "raleway", sans-serif;
-  background-color: #00141e;
+  background-color: #222222;
 }
 
 .navbar {
-  background-color: #00141e !important;
+  background-color: #222222 !important;
 
   border-bottom: 2px solid #f64e60 !important;
 }
@@ -18,14 +18,16 @@ body {
 .nav-link {
   color: #f6f3f3 !important;
 }
-
+.search {
+  height: 30px;
+}
 .form-control {
   background-color: #f6f3f3 !important;
 }
 
 .btn {
   background-color: #01d099;
-  color: honeydew;
+  color: #1f1b1b;
 }
 
 .btn:hover {
@@ -34,16 +36,16 @@ body {
 }
 
 .leagues-section {
-  background-color: #00141e;
+  background-color: #222222;
   padding: 40px 0;
 }
 
 .league-card {
   text-align: center;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f6f3f3;
+  border: 1px solid rgb(133, 131, 131);
+  border-radius: 5px;
+  background-color: #edecec;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -139,13 +141,13 @@ td {
 }
 
 #wg-api-football-standings {
+  border: 1px solid #121212;
   margin-top: 30px;
 }
 
 .wg_header {
   background-color: #1f1b1b !important;
 }
-
 
 h1 {
   color: #fff;
@@ -156,15 +158,15 @@ h1 {
 .competitions-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px; 
+  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 .competition-card {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #edecec;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -186,6 +188,18 @@ h1 {
 
 @media (max-width: 768px) {
   .competitions-container {
-      grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
+}
+
+/*INDEX*/
+
+#wg-api-football-games {
+  margin-top: 60px;
+  border: 1px solid #121212;
+}
+
+#wg-api-football-fixtures {
+  margin-top: 30px;
+  border: 1px solid #121212;
 }
