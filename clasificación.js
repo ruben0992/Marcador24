@@ -30,15 +30,16 @@ const translations = {
   "Ýokary Liga": "Primera Liga",
   "Liga MX Femenil": "Liga MX Femenina",
   "Premier Liga 2 Division One": "Primera División 2 de la Premier Liga",
+  "Primeira Liga": "Primera Liga",
   // Otros elementos de traducción aquí...
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const widget = document.getElementById("wg-api-football-games");
+  const widget = document.getElementById("wg-api-football-standings");
 
   if (!widget) {
     console.error(
-      "El widget con el ID 'wg-api-football-games' no se encuentra en el DOM."
+      "El widget con el ID 'wg-api-football-standings' no se encuentra en el DOM."
     );
     return;
   }
@@ -76,23 +77,3 @@ document.addEventListener("click", function (event) {
     })
   );
 });
-
-document.addEventListener("click", function (event) {
-  let leagueCard = event.target.closest(".competition-card");
-  if (!leagueCard) return;
-  event.preventDefault();
-
-  let id = leagueCard.getAttribute("data-league");
-  let fixtures = document.getElementById("wg-api-football-fixtures");
-  fixtures.innerHTML = "";
-  fixtures.setAttribute("data-league", id);
-
-  window.document.dispatchEvent(
-    new Event("DOMContentLoaded", {
-      bubbles: true,
-      cancelable: true,
-    })
-  );
-});
-
-// PROFIL DE JUGADORES

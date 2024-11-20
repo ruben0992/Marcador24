@@ -34,11 +34,11 @@ const translations = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const widget = document.getElementById("wg-api-football-games");
+  const widget = document.getElementById("wg-api-football-fixtures");
 
   if (!widget) {
     console.error(
-      "El widget con el ID 'wg-api-football-games' no se encuentra en el DOM."
+      "El widget con el ID 'wg-api-football-fixtures' no se encuentra en el DOM."
     );
     return;
   }
@@ -60,24 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("click", function (event) {
-  let leagueCard = event.target.closest(".league-card");
-  if (!leagueCard) return;
-  event.preventDefault();
-
-  let id = leagueCard.getAttribute("data-league");
-  let standings = document.getElementById("wg-api-football-standings");
-  standings.innerHTML = "";
-  standings.setAttribute("data-league", id);
-
-  window.document.dispatchEvent(
-    new Event("DOMContentLoaded", {
-      bubbles: true,
-      cancelable: true,
-    })
-  );
-});
-
-document.addEventListener("click", function (event) {
   let leagueCard = event.target.closest(".competition-card");
   if (!leagueCard) return;
   event.preventDefault();
@@ -94,5 +76,3 @@ document.addEventListener("click", function (event) {
     })
   );
 });
-
-// PROFIL DE JUGADORES
